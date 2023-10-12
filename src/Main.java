@@ -34,16 +34,14 @@ public class Main {
             avg[i] = (float) Math.floor(avg[i]);
 
             //Calculating result
-            for (int k = 0; k <= n - 2; k++)
+
+            if (marks[i][0] >= 50 && marks[i][1] >= 50 && marks[i][2] >= 50)
             {
-                if (marks[i][k] > 50)
-                {
-                    result[i] = "P";
-                }
-                else
-                {
-                    result[i] = "F";
-                }
+                result[i] = "P";
+            }
+            else
+            {
+                result[i] = "F";
             }
 
             //Calculating grade
